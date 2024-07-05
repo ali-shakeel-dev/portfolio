@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Basement;
+  src: url(./assets/BasementGrotesque-Black_v1.202.ttf);
+}
+
+@font-face {
+  font-family: TomatoG;
+  src: url(./assets/TomatoGrotesk-Regular.otf);
+}
+
+body {
+  font-family: TomatoG;
+}
+
+
+#specialtext,
+i {
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+
+button:hover i {
+  color: black;
+}
+
+.mf-cursor {
+  color: white !important;
+}
+
+.mf-cursor.-text {
+  color: rgb(79, 241, 79) !important;
+}
+
+@media (max-width:1000px) {
+  .mf-cursor {
+    display: none;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  background-color: rgba(79, 241, 79, .9);
+  color: white;
+}

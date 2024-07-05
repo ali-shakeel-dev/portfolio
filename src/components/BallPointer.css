@@ -1,0 +1,15 @@
+  .ball {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: white;
+      transform: translate(-50%, -50%);
+      transition: transform 0.2s ease-out, height 0.2s ease-out;
+      pointer-events: none;
+  }
+
+  .ball.dragging {
+      height: 19px;
+      /* Change height while dragging */
+  }
